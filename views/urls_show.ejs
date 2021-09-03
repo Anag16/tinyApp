@@ -17,12 +17,12 @@
       </div>
     <div class="card-footer text-muted"></div>
   </div>
-  <h3 class="card-title" >Update TinyURL</h3>
   <!--  <p class="card-text">Short URL: <a href="/u/<%= shortURL %>"><%= shortURL %></a></p> -->    
       <form class="form-inline" action="/urls/<%= shortURL %>/edit" method="POST", style = "text-align: center; display: inline-block;">
+        <h3 class="card-title" style="text-align: start;margin-left: 1rem;">Update TinyURL</h3>
         <div class="form group mb-2">
-          <label for="longURL">Update your URL:</label>
-          <input class="form-control" type="text" name="longURL" placeholder="<%= longURL %>" style="width: 300px; margin: 1em; text-align: center;">
+          <label for="longURL" style="justify-content: start;margin-left: 1rem;">Update your URL:</label>
+          <input class="form-control" type="text" name="longURL" placeholder="<%= longURL %>" style="width: 300px; margin: 1em; text-align: left;">
           <button type="submit" class="btn btn-primary">Submit</button>
         </div>
       </form>
